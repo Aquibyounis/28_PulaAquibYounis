@@ -75,6 +75,8 @@ To ensure reliability and production-aligned behavior, multiple guardrails are a
 - Large Language Models (Mistral/ Sentence-Transformers)
 - Pydantic (for schema validation)
 - Pandas (data handling)
+- Flask
+- N8N
 
 ---
 
@@ -97,6 +99,38 @@ The system follows a modular, backend-first design:
 6. Insights are returned as JSON for downstream use.
 
 This design prioritizes correctness, explainability, and extensibility.
+
+---
+
+## Flask API Layer
+
+The AI pipeline is exposed via a lightweight Flask API to support real-time inference and automation use cases.
+
+**Endpoint:**
+POST `/analyze/text`
+
+**Input:**
+- Raw text (CSV-style or conversational)
+- Accepts unstructured chat input (no JSON required)
+
+**Output:**
+- Schema-validated JSON containing extracted insights
+
+This API design enables easy integration with external tools such as workflow engines and messaging platforms.
+
+---
+
+## n8n Automation Integration
+
+To demonstrate real-world applicability, the Flask API is integrated with **n8n** for workflow automation.
+
+### Implemented Workflow
+- Chat Trigger receives raw call text
+- HTTP Request node sends text to the Flask API
+- Telegram node delivers structured insights to a Telegram chat
+
+
+The workflow is executed locally using n8n Chat Trigger. In a hosted setup, the same workflow can be triggered via Telegram input or webhooks.
 
 ---
 
