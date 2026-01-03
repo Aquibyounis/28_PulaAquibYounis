@@ -1,0 +1,6 @@
+call_id,schema_valid,deterministic,has_objection,has_competitor,sentiment
+1,True,True,True,True,neutral
+2,True,True,True,False,neutral
+3,True,True,True,True,positive
+4,True,False,True,False,positive
+5,True,True,True,False,negative
