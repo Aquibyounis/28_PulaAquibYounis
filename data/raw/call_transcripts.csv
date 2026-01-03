@@ -25,3 +25,11 @@ call_id,speaker,text,timestamp
 4,Doctor,"Are there any notable side effects I should be aware of?",2024-01-04 11:01:40
 4,Rep,"Side effects are mild and comparable to existing options.",2024-01-04 11:02:00
 4,Doctor,"Alright, I can evaluate it for suitable patients.",2024-01-04 11:02:20
+5,Rep,"Good morning doctor, I wanted to discuss our new cardiovascular medication.",2024-01-05 10:00:00
+5,Doctor,"Good morning. I have reviewed it briefly, but I am not convinced.",2024-01-05 10:00:15
+5,Rep,"Our drug has shown comparable efficacy with improved tolerability.",2024-01-05 10:00:35
+5,Doctor,"Comparable efficacy is not enough for me to switch from my current brand.",2024-01-05 10:00:55
+5,Rep,"We also offer competitive pricing and patient support programs.",2024-01-05 10:01:15
+5,Doctor,"Pricing is still higher than alternatives, and outcomes do not justify the change.",2024-01-05 10:01:35
+5,Rep,"Would additional clinical data help address your concerns?",2024-01-05 10:01:55
+5,Doctor,"At this point, no. I will continue with my existing treatment choices.",2024-01-05 10:02:15
