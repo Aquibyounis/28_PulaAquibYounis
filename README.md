@@ -85,7 +85,12 @@ To ensure reliability and production-aligned behavior, multiple guardrails are a
 pip install -r requirements.txt
 python main.py
 ```
-
+---
+## How to Flask server
+```bash
+pip install -r requirements.txt
+python server.py
+```
 ---
 ## Architecture & Pipeline Flow
 
