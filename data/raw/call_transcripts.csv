@@ -9,3 +9,8 @@ call_id,speaker,text,timestamp
 2,HCP,"The efficacy looks good but I am worried about side effects.",2024-01-02 11:00:20
 2,Rep,"Side effects are comparable to standard treatments.",2024-01-02 11:00:40
 2,HCP,"I will consider it for select patients.",2024-01-02 11:01:00
+3,Rep,"Good afternoon doctor, I wanted to discuss our new asthma inhaler.",2024-01-03 09:00:00
+3,Doctor,"Good afternoon. How is it different from existing inhalers?",2024-01-03 09:00:15
+3,Rep,"It offers faster relief and fewer side effects.",2024-01-03 09:00:35
+3,Doctor,"What about pricing compared to current options?",2024-01-03 09:00:55
+3,Rep,"It is competitively priced with reimbursement support.",2024-01-03 09:01:15

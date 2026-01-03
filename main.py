@@ -1,11 +1,20 @@
-from pipeline.loader import load_transcript
+from pipeline.loader import load_transcript, get_all_call_ids
 from pipeline.extractor import extract_insights
 import json
 
 if __name__ == "__main__":
-    transcript = load_transcript(call_id=1)
+    all_call_ids = get_all_call_ids()
 
-    insights = extract_insights(transcript)
+    all_results = []
 
-    print("\n--- AI INSIGHTS ---\n")
-    print(json.dumps(insights.dict(), indent=2))
+    for call_id in all_call_ids:
+        transcript = load_transcript(call_id=call_id)
+        insights = extract_insights(transcript)
+
+        all_results.append({
+            "call_id": call_id,
+            "insights": insights.model_dump()  # Pydantic v2
+        })
+
+    print("\n--- AI INSIGHTS (ALL CALLS) ---\n")
+    print(json.dumps(all_results, indent=2))

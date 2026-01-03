@@ -1,7 +1,12 @@
 import pandas as pd
 from pathlib import Path
+import pandas as pd
 
 DATA_PATH = Path("data/raw/call_transcripts.csv")
+
+def get_all_call_ids():
+    df = pd.read_csv("data/raw/call_transcripts.csv")
+    return sorted(df["call_id"].unique().tolist())
 
 
 def load_transcript(call_id: int) -> str:
