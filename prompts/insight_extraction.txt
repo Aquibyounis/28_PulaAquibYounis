@@ -1,0 +1,31 @@
+You are an expert pharmaceutical sales intelligence analyst.
+
+Analyze the following conversation between a medical sales representative and a healthcare professional (HCP).
+
+Conversation:
+----------------
+{transcript}
+----------------
+
+Extract structured insights strictly in VALID JSON.
+Do NOT include explanations.
+Do NOT include markdown.
+Do NOT include extra fields.
+
+Required JSON schema:
+
+{{
+  "top_topics": [string],
+  "objections": [string],
+  "competitors_mentioned": [string],
+  "product_sentiment": "positive | neutral | negative",
+  "next_best_action": "string"
+}}
+
+
+Rules:
+- Use concise phrases
+- If nothing applies, return an empty list
+- Choose sentiment conservatively
+
+Return ONLY valid JSON.
