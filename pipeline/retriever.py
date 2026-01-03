@@ -6,9 +6,7 @@ KNOWLEDGE_PATH = Path("knowledge/sales_knowledge.txt")
 
 
 def retrieve_context(query: str, top_k: int = 2) -> str:
-    """
-    Retrieve relevant domain context for a given query using embeddings.
-    """
+    
     if not KNOWLEDGE_PATH.exists():
         return ""
 
